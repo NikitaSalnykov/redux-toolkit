@@ -2,7 +2,19 @@ import { RiDeleteBinLine } from 'react-icons/ri';
 import { Text } from 'components';
 import { DeleteButton, TodoWrapper } from './Todo.styled';
 
-export const Todo = ({ text, counter, onClick, id }) => {
+export const Todo = ({
+  text,
+  counter,
+  onClick,
+  id,
+  handleModal,
+  handleGetId,
+}) => {
+  const handleClickBtn = () => {
+    handleGetId(id);
+    handleModal();
+  };
+
   return (
     <>
       <TodoWrapper>
@@ -13,6 +25,7 @@ export const Todo = ({ text, counter, onClick, id }) => {
         <DeleteButton type="button" onClick={() => onClick(id)}>
           <RiDeleteBinLine size={24} />
         </DeleteButton>
+        <button onClick={handleClickBtn}>Edit</button>
       </TodoWrapper>
     </>
   );

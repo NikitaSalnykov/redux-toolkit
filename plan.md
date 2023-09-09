@@ -28,7 +28,10 @@ npm install @reduxjs/toolkit react-redux
 [react-redux](https://react-redux.js.org/).
 
 - Для зберігання всего `state` застосунку в `local storage` використовуй
-  бібліотеку [redux-persist](https://github.com/rt2zz/redux-persist#basic-usage)
+  бібліотеку [redux-persist](https://github.com/rt2zz/renpm install
+  redux-persist
+
+dux-persist#basic-usage)
 
 - використовуй цей
   [конфіг](https://redux-toolkit.js.org/usage/usage-guide#use-with-redux-persist)

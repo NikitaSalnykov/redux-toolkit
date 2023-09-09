@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Grid = styled.ul`
+export const GridList = styled.ul`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 
